@@ -1,0 +1,27 @@
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        int cem = 0;
+        int sum = 0;
+        int count=0;
+        int sonReqem = 0;
+        int edediOrta = 0;
+        byte[] age = {12,11,13,18};
+        
+        for(var i =0;i<age.length;i++){
+          sonReqem = age[i]%10;
+          age[i]/=10;
+          cem  = age[i] + sonReqem;
+          
+          if(cem%2!=0){
+              count ++;
+              sum+=cem;
+              edediOrta = sum/count;
+          }
+          
+       
+            
+        }
+         System.out.println(edediOrta);
+    }
+}
